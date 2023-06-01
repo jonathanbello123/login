@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+    body{
+        width: 1200px;
+        height: 500px;
+        background-color: black;
+        background-image: url(assets/disposicion-elementos-cine-sobre-fondo-negro-espacio-copia.jpg);
+        background-size: cover;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+    }
+    .inicio__sesion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    .img-s{
+        display: flex;
+        width: 600px;
+        height: 430px;
+        margin-top: 30px;
+
+    }
+    .img-s img {
+        width: 0;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+    }
+    .img-s img:hover{
+        cursor: crosshair;
+        width: 300px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 90px;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .text-s h2 {
+        color: white;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .text-s h3{
+        color: white;
+        background-color: black;
+        border-radius: 30px;
+    }
+    .text-s span{
+        color: rgb(243, 239, 3);
+        cursor: pointer;
+    }
+    .text-s input{
+        border-bottom: 1px solid white;
+        background: none;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+    .text-s button {
+        background-color: rgb(243, 239, 3);
+        color: white;
+        width: 90%;
+        text-align: center;
+        border-radius: 20px;
+    }
